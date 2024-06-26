@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/weather-task/static/css/main.1be89df3.css",
+    "main.js": "/weather-task/static/js/main.7e4f76c3.js",
+    "index.html": "/weather-task/index.html",
+    "main.1be89df3.css.map": "/weather-task/static/css/main.1be89df3.css.map",
+    "main.7e4f76c3.js.map": "/weather-task/static/js/main.7e4f76c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1be89df3.css",
+    "static/js/main.7e4f76c3.js"
+  ]
+}
