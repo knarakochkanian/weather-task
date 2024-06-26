@@ -1,0 +1,14 @@
+.Toggle{
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: plum;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: pink;
+  }
+}

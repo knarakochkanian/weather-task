@@ -1,0 +1,10 @@
+@import "variables.module.scss";
+
+.HeaderWrapper{
+  background-color: rebeccapurple;
+  >div{
+    margin: 0 auto;
+    @include container;
+    @include flex-between;
+  }
+}

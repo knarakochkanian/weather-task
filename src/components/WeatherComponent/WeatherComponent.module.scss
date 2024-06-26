@@ -1,0 +1,38 @@
+@import "variables.module";
+.Wrapper{
+  @include container;
+  >h1{
+    text-align: center;
+  }
+  &CurrentToday{
+    @include flex-center;
+  }
+  &Hourly{
+    >li{
+      padding: 10px;
+      border-bottom: 2px solid plum;
+    }
+
+  }
+  &Current{
+    @include flex-column(0);
+    align-items: center;
+    max-width: 600px;
+    >img{
+      width: 200px;
+    }
+    &Description{
+      font-weight: bold;
+    }
+  }
+  &Daily{
+    @include flex-between;
+    gap: 20px;
+    >li{
+      padding: 20px;
+
+      border: 2px solid plum;
+    }
+  }
+
+}

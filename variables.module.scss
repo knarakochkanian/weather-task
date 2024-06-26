@@ -1,0 +1,35 @@
+
+
+@mixin container {
+  display: flex;
+  max-width: 1280px;
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+@mixin flex-column($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin flex-start {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}

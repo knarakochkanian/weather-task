@@ -1,14 +1,11 @@
-'use client';
 import { configureStore } from '@reduxjs/toolkit';
 import generalReducer from './features/generalSlice';
-
-
 import logger from 'redux-logger';
 
 export const makeStore = () => {
     return configureStore({
         reducer: {
-            generalReducer,
+            general: generalReducer,
         },
         middleware: (getDefaultMiddleware) =>
             process.env.NODE_ENV === 'development'
@@ -16,6 +13,10 @@ export const makeStore = () => {
                 : getDefaultMiddleware(),
     });
 };
+
+const store = makeStore();
+
+export default store;
 
 export type AppStore = ReturnType<typeof makeStore>;
 export type RootState = ReturnType<AppStore['getState']>;
