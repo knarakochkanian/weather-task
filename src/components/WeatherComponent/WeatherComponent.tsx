@@ -66,7 +66,6 @@ const WeatherComponent: React.FC = () => {
         const fetchForecastWeather = async () => {
             const data = await fetchWeatherData(FORECAST_URL);
             if (data) {
-                const today = new Date().toISOString().split('T')[0];
                 const hourlyData = data.list
                     .filter((item: any) => item.dt_txt.startsWith(selectedDate))
                     .map((item: any) => ({
